@@ -1,7 +1,148 @@
+body {
+    font-size: 16px;
+}
+
 .banner {
-    background-image: url("../images/banner-crop.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(26, 25, 25, 0.5)),
+    url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 30rem;    
+    background-position: top;
+    width: 100%;
+    height: 25rem;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;    
+}
+
+.banner__text {
+    font-family: 'Zilla Slab', serif; 
+    font-weight: 300;
+    margin: 0 0 4rem 5rem;    
+}
+
+.title {
+    font-size: 4rem;
+    padding: 1.2rem;
+    width: max-content;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.sub-title {
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(114, 60, 60);
+    background-color: whitesmoke;
+    margin-left: 1rem;
+    
+    
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.article {
+    width: 75%;
+    margin-top: 1.5rem;
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.article__p {
+    padding-bottom: 1.5rem;
+}
+
+.clear {
+    clear: both;
+    padding-top: 1.5rem;
+}
+
+.line-height {
+    line-height: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.large {
+    font-size: 2.5rem;
+}
+
+.letter-space {
+    letter-spacing: 0.4rem;
+}
+
+.color {
+    color: rgb(114, 60, 60);
+}
+
+.figure-right {
+    float: right;
+    margin-left: 1.2rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.figure-left {
+    width: 27rem;
+    float: left;
+    margin-right: 1.2rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.sources {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.further-reading {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(26, 25, 25, 0.5)),
+    url("../images/eniac4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 30rem;
+
+}
+
+.further-reading__links {
+    width: 45%;
+    text-align: left;
+    
 }
