@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 /* Layout */
@@ -17,32 +18,30 @@ body {
 /* Images */
 
 .border {
-    border-bottom: 1px solid rgb(207, 111, 111);
+    border-bottom: 1px solid #db6f6f;
 }
 
-.figure-right {
-    float: right;
-    margin-left: 1.2rem;
-    padding-top: 0.5rem;
+.figure {
     text-align: center;
     color: grey;
     font-size: 0.8rem;
+    padding-top: 0.5rem;
 }
 
-.figure-left {
-    width: 27rem;
+.right {
+    float: right;
+    margin-left: 1.2rem;    
+}
+
+.left {
     float: left;
     margin-right: 1.2rem;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: grey;
-    font-size: 0.8rem;
+    width: 27rem;       
 }
 
 img {
     max-width: 100%;
-    height: auto;
-    
+    height: auto;    
 }
 
 /* Text and anchor styles */
@@ -116,15 +115,16 @@ a:hover {
 }
 
 .sub-title {
-    font-family: 'Zilla Slab Highlight', cursive;
+    font-family: 'Zilla Slab', serif;
     font-size: 2rem;
-    font-weight: 700;
-    color: rgb(114, 60, 60);
-    background-color: whitesmoke;
-    margin-left: 1rem;    
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: rgb(114, 60, 60);
+    margin-left: 1rem;
+    padding: 0 0.2rem;
 }
 
-
+/* Main and article */
 
 .main {
     align-items: center;
@@ -149,6 +149,8 @@ a:hover {
     letter-spacing: 0.1rem;
     margin: 3rem 0 0.5rem;
 }
+
+/* Further reading */
 
 .further-reading {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(26, 25, 25, 0.5)),
@@ -175,8 +177,7 @@ a:hover {
     width: 45%;
     text-align: left;
     margin-right: 1rem;
-    transition: opacity 100ms ease-out;
-    
+    transition: opacity 100ms ease-out;    
 }
 
 .further-reading__list li {
@@ -194,21 +195,41 @@ a:hover {
 
 .list__link {
     color: whitesmoke;
-    background-color: rgb(114, 60, 60);
     padding: 0 0.3rem;
-    
+    box-shadow: 0 3px 3px -2px #444444;    
 }
+
+.bg-shade-1 {
+    background-color: #bb716f;
+}
+
+.bg-shade-2 {
+    background-color: #944f4d;
+}
+
+.bg-shade-3 {
+    background-color: #833a3a;
+}
+
+.bg-shade-4 {
+    background-color: #663131;
+}
+
+.bg-shade-5 {
+    background-color: #472424;
+}
+
+/* Footer */
 
 .footer {
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     position: absolute;
     bottom: 0.2rem;
-    left: 0.2rem;  
-    
+    left: 0.2rem;      
 }
 
-.footer .list__link {
+.footer a {
     font-family: 'Zilla Slab', serif;
     padding: 0 0.3rem;
     letter-spacing: 0.1rem;
