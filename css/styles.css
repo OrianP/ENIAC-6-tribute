@@ -26,6 +26,7 @@ body {
     color: grey;
     font-size: 0.8rem;
     padding-top: 0.5rem;
+    width: 27rem; 
 }
 
 .right {
@@ -35,13 +36,13 @@ body {
 
 .left {
     float: left;
-    margin-right: 1.2rem;
-    width: 27rem;       
+    margin-right: 1.2rem;          
 }
 
 img {
     max-width: 100%;
-    height: auto;    
+    height: auto;
+    box-shadow: 0px 8px 8px -8px #444444;    
 }
 
 /* Text and anchor styles */
@@ -93,8 +94,6 @@ a:hover {
     background-position: top;
     width: 100%;
     height: 25rem;   
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;    
 }
@@ -120,7 +119,7 @@ a:hover {
     font-weight: 400;
     color: whitesmoke;
     background-color: rgb(114, 60, 60);
-    margin-left: 1rem;
+    margin: 0 1rem;
     padding: 0 0.2rem;
 }
 
@@ -177,11 +176,12 @@ a:hover {
     width: 45%;
     text-align: left;
     margin-right: 1rem;
-    transition: opacity 100ms ease-out;    
+    transition: opacity 200ms ease-out;    
 }
 
 .further-reading__list li {
     margin-bottom: 1.5rem;
+    line-height: 1.2;
 
 }
 
@@ -223,15 +223,74 @@ a:hover {
 
 .footer {
     font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
-    position: absolute;
-    bottom: 0.2rem;
-    left: 0.2rem;      
+    color: whitesmoke; 
+    background-color: #311a1a;
+    border-bottom: solid #311a1a;
+}
+
+.footer p {
+    padding-left: 0.5rem;
+    opacity: 0.8;
 }
 
 .footer a {
     font-family: 'Zilla Slab', serif;
-    padding: 0 0.3rem;
     letter-spacing: 0.1rem;
+    color: #bb716f;
 }
 
+@media only screen and (max-width: 770px) {
+    .mobile-centre {
+        align-items: center;
+    }
+
+    .banner__text {
+        margin: 0 0 1.5rem 0;
+        
+    }
+
+    .sub-title {
+        margin: 0 1rem;
+        text-align: center;
+        
+    }
+
+    .right, .left {
+        float: none;
+        margin: 0 0 1rem 0;
+        width: unset;
+    }
+
+    .further-reading__list {
+        text-align: center;
+        width: unset;
+        margin-right: unset;
+        margin-top: 1.5rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+
+    .title {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .sub-title {
+        font-size: 1.8rem;
+        width: 100%;
+        margin: unset;
+    }
+
+    .sources {
+        margin: 1rem 0;
+    }
+
+    .further-reading {
+        height: auto;
+    } 
+}
