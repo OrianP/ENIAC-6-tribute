@@ -243,6 +243,81 @@ a:hover {
     color: #bb716f;
 }
 
+/* Comments */
+
+.comments-title {
+    font-size: 2.5rem;
+    background-color: #f8f4e6;
+    padding-left: 0;
+    
+}
+
+label {
+    padding-bottom: 0.5rem;
+    color: #444444;
+}
+
+input {
+    padding: 0.2rem 0 1rem 0.4rem;
+    border: 0;
+    color: #472424;
+    border-bottom: #472424 1px solid;
+    background-color: #e0c8c8;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    
+}
+
+::placeholder {
+    color: #693434;
+    opacity: 0.6;
+}
+
+input:focus {
+    outline-color: #472424;
+}
+
+.label-input {
+    padding-right: 1rem;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.2rem;
+}
+
+button {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.2rem;
+    padding: 0.2rem 2rem;
+    align-self: flex-end;
+    color: #f5f5f5;
+    border: #917171 2px solid; 
+    border-radius: 5px;
+    transition: background-color 400ms ease-in-out;
+}
+
+button:hover {
+    background-color: #a16161;
+}
+
+.comments-section {
+    font-family: 'Zilla Slab', serif;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    height: 30rem;
+}
+
+.flex-row {
+    padding: 1rem 0;
+}
+
+.comment-input {
+    width: 20rem;
+    
+}
+
+.list {
+    padding-top: 0.5rem;
+}
+
 @media only screen and (max-width: 770px) {
     .mobile-centre {
         align-items: center;
