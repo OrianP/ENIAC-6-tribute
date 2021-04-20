@@ -11,6 +11,10 @@ body {
     flex-direction: column;
 }
 
+.flex-row {
+    display: flex;
+}
+
 .clear {
     clear: both;
     padding-top: 1.5rem;
