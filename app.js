@@ -27,4 +27,20 @@
         posts.appendChild(newComment);    
     }
 
+// Pop up infos
+// Declare variable for buttons associated with pop up. Assign unique ID to each person? 
+const overlay = document.getElementById('overlay')
+const eniacButton = document.querySelector('.eniac-button');
+const eniacModal = document.querySelector('#eniac-modal');
+// Declare a function that displays the pop up info
+const openModal = () => {
+    // this selects all elements with a class of modal 
+    //how do we make it open only the one we want?
+    const modal = document.querySelectorAll('.modal');
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
+// Add event listener for 'click' events that call the above function
 
+// how to hide from screen readers - visibility: hidden hides from screen readers!!! 
+// use button element as opposed to anchor tag for semantics sake

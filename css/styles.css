@@ -88,6 +88,19 @@ a:hover {
     opacity: 0.6;
     cursor:pointer;
 }
+
+button {
+    border: none;
+    background-color: unset;
+    font-size: inherit;
+    font-family: inherit;
+    transition: opacity 300ms ease-out;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor:pointer; 
+}
 /* Section by section */ 
 /* Banner */
 
@@ -283,7 +296,7 @@ input:focus {
     font-size: 1.2rem;
 }
 
-button {
+.comments-button {
     font-family: 'Zilla Slab', serif;
     font-size: 1.2rem;
     padding: 0.2rem 2rem;
@@ -294,7 +307,7 @@ button {
     transition: background-color 400ms ease-in-out;
 }
 
-button:hover {
+.comments-button:hover {
     background-color: #a16161;
 }
 
@@ -316,6 +329,75 @@ button:hover {
 
 .list {
     padding-top: 0.5rem;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: -50rem;
+    font-family: 'Zilla Slab', serif;
+    background-color: #fff;
+    padding: 1rem 3rem 1.5rem;
+    line-height: initial;
+    border-bottom: #723C3C 1.5px solid;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0.5;
+    transition: visibility 400ms ease-in-out, 
+                top 400ms ease-in-out,
+                opacity 400ms ease-in-out;
+    
+}
+
+.modal.active {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+}
+
+.modal-header {
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.modal-figure {
+    width: 20rem;
+}
+
+.modal-text {
+    font-size: 1.8rem;
+    color: #444;
+}
+
+.close-button {
+    border: none;
+    background-color: unset;
+    font-size: 3rem;
+    color: #472424;
+}
+
+.close-button:hover {
+    color: #833a3a;
+    opacity: 0.8;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 770px) {
