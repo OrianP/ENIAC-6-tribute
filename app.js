@@ -1,5 +1,56 @@
+/* MODALS */
+
+// Declare variables for overlay and all open and close buttons returning an iterable Nodelist 
+// Using the data attribute as selector inside querySelectorAll 
+const overlay = document.getElementById('overlay')
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+
+// Add event listener for each button
+// 'click' events create a variable targeting the specific modal based on data target attribute
+// call the openModal function
+
+openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+    const specificModal = document.querySelector(button.dataset.modalTarget);
+    openModal(specificModal);
+    });
+});
+
+// Add event listener to overlay to close the active modal when overlay is clicked 
+// Do I need the forEach since no two modals will be open at once? 
+overlay.addEventListener('click', () => {
+    const activeModal = document.querySelectorAll('.modal.active');
+    activeModal.forEach(activeModal => {
+        closeModal(activeModal);    
+    });
+});
+
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const parentModal = button.closest('.modal');
+        closeModal (parentModal);
+    });
+});
+
+// Declare functions that open and close the modal
+const openModal = (modal) => {
+    modal.classList.add('active');
+    overlay.classList.add('active');
+};
+
+const closeModal = (modal) => {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+};
+
+// research aria to replace data-target
+// use button element as opposed to anchor tag for semantics sake
+
+/* COMMENTS */
+
 // Declare form variable
-    const form = document.querySelector('#form');
+const form = document.querySelector('#form');
 
 // Listen for form submission
 // Prevent default form button behavior
@@ -26,21 +77,3 @@
 // Append the new li to the ul 
         posts.appendChild(newComment);    
     }
-
-// Pop up infos
-// Declare variable for buttons associated with pop up. Assign unique ID to each person? 
-const overlay = document.getElementById('overlay')
-const eniacButton = document.querySelector('.eniac-button');
-const eniacModal = document.querySelector('#eniac-modal');
-// Declare a function that displays the pop up info
-const openModal = () => {
-    // this selects all elements with a class of modal 
-    //how do we make it open only the one we want?
-    const modal = document.querySelectorAll('.modal');
-    modal.classList.add('active');
-    overlay.classList.add('active');
-}
-// Add event listener for 'click' events that call the above function
-
-// how to hide from screen readers - visibility: hidden hides from screen readers!!! 
-// use button element as opposed to anchor tag for semantics sake

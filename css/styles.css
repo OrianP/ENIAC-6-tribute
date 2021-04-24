@@ -393,6 +393,7 @@ input:focus {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
+    transition: opacity 400ms ease-out;
 }
 
 #overlay.active {
