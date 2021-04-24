@@ -23,11 +23,12 @@
   <main class="main flex">
     <article class="article">
       <p class="article__p">
-        <span class="line-height"><span class="large bold color">In 1943</span>, the United States Army funded a secret experiment that led to the</span> invention of the world’s first operational computer - the <button data-modal-target="#eniac-modal" class="bold letter-space color eniac-button">ENIAC</button> (Electronic Numerical Integrator and Computer). It’s original purpose was to calculate artillery ballistics, and it was an enourmous machine.
+        <span class="line-height"><span class="large bold color">In 1943</span>, the United States Army funded a secret experiment that led to the</span> invention of the world’s first operational computer - the <button data-modal-target="#eniac-modal" class="bold letter-space color">ENIAC</button> (Electronic Numerical Integrator and Computer). It’s original purpose was to calculate artillery ballistics, and it was an enourmous machine.
       </p>
 
       <p class="article__p">
-        Standing 8 feet high and covering 1800 square feet, the ENIAC was also overwhelmingly intricate: comprised of 5,000,000 soldered joints, 70,000 resistors, 10,000 capacitors, 6,000 manual switches and 1,500 relays. The engineers who invented the machine, <a  class="bold color" href="https://en.wikipedia.org/wiki/John_Mauchly" target="_blank" rel="noopener">John Mauchly</a> and <a class="bold color" href="https://en.wikipedia.org/wiki/J._Presper_Eckert" target="_blank" rel="noopener">J. Presper Eckert</a>, were now in search of people who could program it.
+        Standing 8 feet high and covering 1800 square feet, the ENIAC was also overwhelmingly intricate: comprised of 5,000,000 soldered joints, 70,000 resistors, 10,000 capacitors, 6,000 manual switches and 1,500 relays. The engineers who invented the machine, 
+        <button data-modal-target="#mauchly-modal" class="bold color"> John Mauchly</button> and <button data-modal-target="#eckert-modal" class="bold color">J. Presper Eckert</button>, were now in search of people who could program it.
       </p>
 
       <p class="article__p">
@@ -35,7 +36,7 @@
       </p>
 
       <p class="article__p">
-        The selected team included <a class="bold color" href="https://en.wikipedia.org/wiki/Jean_Bartik" target="_blank" rel="noopener">Jean Jennings Bartik</a>, who would later lead the development of computer storage and memory, and <a class="bold color" href="https://en.wikipedia.org/wiki/Betty_Holberton" target="_blank" rel="noopener">Betty Holberton</a>, who would go on to create the first software application. Together with <a class="bold color" href="https://en.wikipedia.org/wiki/Frances_Spence" target="_blank" rel="noopener">Frances Bilas</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Marlyn_Meltzer" target="_blank" rel="noopener">Marlyn Wescoff Meltzer</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Kathleen_Antonelli" target="_blank" rel="noopener">Kathleen  McNulty</a> and <a class="bold color" href="https://en.wikipedia.org/wiki/Ruth_Teitelbaum" target="_blank" rel="noopener">Ruth Lichterman</a>, they laid the groundwork for future programmers and software engineers. And, since they were the first modern coders, they were instrumental in teaching others to program after the war.
+        The selected team included <button data-modal-target="#bartik-modal" class="bold color">Jean Jennings Bartik</button>, who would later lead the development of computer storage and memory, and <a class="bold color" href="https://en.wikipedia.org/wiki/Betty_Holberton" target="_blank" rel="noopener">Betty Holberton</a>, who would go on to create the first software application. Together with <a class="bold color" href="https://en.wikipedia.org/wiki/Frances_Spence" target="_blank" rel="noopener">Frances Bilas</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Marlyn_Meltzer" target="_blank" rel="noopener">Marlyn Wescoff Meltzer</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Kathleen_Antonelli" target="_blank" rel="noopener">Kathleen  McNulty</a> and <a class="bold color" href="https://en.wikipedia.org/wiki/Ruth_Teitelbaum" target="_blank" rel="noopener">Ruth Lichterman</a>, they laid the groundwork for future programmers and software engineers. And, since they were the first modern coders, they were instrumental in teaching others to program after the war.
       </p>
 
       <figure class="figure right border">
@@ -118,7 +119,8 @@
       this page was created by <a href="https://github.com/OrianP" target="_blank" rel="noopener">OrianP</a>
     </p>
   </footer>
-
+<!-- MODALS -->
+<!--eniac-->
   <div class="modal" id="eniac-modal">
     <div class="modal-header flex-row">
       <p class="color">Electronic Numerical Integrator and Computer</p>
@@ -130,6 +132,48 @@
     </figure>
     <p class="modal-text">
       The first programmable, electronic, general-purpose digital computer. Heralded as a "Giant Brain" by the press, it was designed and primarily used to calculate artillery firing tables for the United States Army's Ballistic Research Laboratory. With a speed one thousand times faster than that of electro-mechanical machines, the ENIAC could calculate a trajectory in 30 seconds that took a human 20 hours - allowing one ENIAC to displace 2,400 humans.
+    </p>
+  </div>
+  
+<!--John Mauchly-->
+  <div class="modal" id="mauchly-modal">
+    <div class="modal-header flex-row">
+      <p class="color">John Mauchly <span class="modal-years">(1907-1980)</span></p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <figure class="figure right modal-figure">
+      <img src="images/john-mauchly.jpg" alt="John Mauchly portrait">
+    </figure>
+    <p class="modal-text">
+      American physicist who, along with J. Presper Eckert, designed ENIAC, as well as EDVAC, BINAC and UNIVAC I, the first commercial computer made in the United States. Together they started the first computer company, the Eckert–Mauchly Computer Corporation (EMCC), and pioneered fundamental computer concepts including the stored program, subroutines, and programming languages. Their work influenced an explosion of computer development in the late 1940s all over the world.
+    </p>
+  </div>
+
+<!--J. Presper Eckert-->
+  <div class="modal" id="eckert-modal">
+    <div class="modal-header flex-row">
+      <p class="color">J. Presper Eckert <span class="modal-years">(1907-1980)</span></p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <figure class="figure right modal-figure">
+      <img src="images/presper-eckert.jpg" alt="J. Presper Eckert portrait">
+    </figure>
+    <p class="modal-text">
+      American electrical engineer and computer pioneer.<br>With John Mauchly, he designed the ENIAC, presented the first course in computing topics (the Moore School Lectures), founded the Eckert–Mauchly Computer Corporation, and designed the first commercial computer in the U.S., the UNIVAC, which incorporated Eckert's invention of the mercury delay line memory.
+    </p>
+  </div>
+
+<!--Jean Jennings Bartik-->
+  <div class="modal" id="bartik-modal">
+    <div class="modal-header flex-row">
+      <p class="color">Jean Jennings Bartik <span class="modal-years">(1924-2011)</span></p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <figure class="figure right modal-figure">
+      <img src="images/jean-bartik.jpg" alt="Jean Jennings Bartik portrait">
+    </figure>
+    <p class="modal-text">
+      American mathematician and programmer. Bartik began her work at the University of Pennsylvania, first manually calculating ballistics trajectories and then using ENIAC to do so. Bartik and her colleagues developed and codified many of the fundamentals of programming while working on the ENIAC, since it was the first computer of its kind. After her work on ENIAC, Bartik went on to work on BINAC and UNIVAC, and spent time at a variety of technical companies as a writer, manager, engineer and programmer. Content-management framework Drupal's default theme, Bartik, is named in her honor.
     </p>
   </div>
 
