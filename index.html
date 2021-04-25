@@ -23,12 +23,12 @@
   <main class="main flex">
     <article class="article">
       <p class="article__p">
-        <span class="line-height"><span class="large bold color">In 1943</span>, the United States Army funded a secret experiment that led to the</span> invention of the world’s first operational computer - the <button data-modal-target="#eniac-modal" class="bold letter-space color">ENIAC</button> (Electronic Numerical Integrator and Computer). It’s original purpose was to calculate artillery ballistics, and it was an enourmous machine.
+        <span class="line-height"><span class="large bold color">In 1943</span>, the United States Army funded a secret experiment that led to the</span> invention of the world’s first operational computer - the <button aria-controls="#eniac-modal" class="bold letter-space color">ENIAC</button> (Electronic Numerical Integrator and Computer). It’s original purpose was to calculate artillery ballistics, and it was an enourmous machine.
       </p>
 
       <p class="article__p">
         Standing 8 feet high and covering 1800 square feet, the ENIAC was also overwhelmingly intricate: comprised of 5,000,000 soldered joints, 70,000 resistors, 10,000 capacitors, 6,000 manual switches and 1,500 relays. The engineers who invented the machine, 
-        <button data-modal-target="#mauchly-modal" class="bold color"> John Mauchly</button> and <button data-modal-target="#eckert-modal" class="bold color">J. Presper Eckert</button>, were now in search of people who could program it.
+        <button aria-controls="#mauchly-modal" class="bold color"> John Mauchly</button> and <button aria-controls="#eckert-modal" class="bold color">J. Presper Eckert</button>, were now in search of people who could program it.
       </p>
 
       <p class="article__p">
@@ -36,7 +36,7 @@
       </p>
 
       <p class="article__p">
-        The selected team included <button data-modal-target="#bartik-modal" class="bold color">Jean Jennings Bartik</button>, who would later lead the development of computer storage and memory, and <a class="bold color" href="https://en.wikipedia.org/wiki/Betty_Holberton" target="_blank" rel="noopener">Betty Holberton</a>, who would go on to create the first software application. Together with <a class="bold color" href="https://en.wikipedia.org/wiki/Frances_Spence" target="_blank" rel="noopener">Frances Bilas</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Marlyn_Meltzer" target="_blank" rel="noopener">Marlyn Wescoff Meltzer</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Kathleen_Antonelli" target="_blank" rel="noopener">Kathleen  McNulty</a> and <a class="bold color" href="https://en.wikipedia.org/wiki/Ruth_Teitelbaum" target="_blank" rel="noopener">Ruth Lichterman</a>, they laid the groundwork for future programmers and software engineers. And, since they were the first modern coders, they were instrumental in teaching others to program after the war.
+        The selected team included <button aria-controls="#bartik-modal" class="bold color">Jean Jennings Bartik</button>, who would later lead the development of computer storage and memory, and <a class="bold color" href="https://en.wikipedia.org/wiki/Betty_Holberton" target="_blank" rel="noopener">Betty Holberton</a>, who would go on to create the first software application. Together with <a class="bold color" href="https://en.wikipedia.org/wiki/Frances_Spence" target="_blank" rel="noopener">Frances Bilas</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Marlyn_Meltzer" target="_blank" rel="noopener">Marlyn Wescoff Meltzer</a>, <a class="bold color" href="https://en.wikipedia.org/wiki/Kathleen_Antonelli" target="_blank" rel="noopener">Kathleen  McNulty</a> and <a class="bold color" href="https://en.wikipedia.org/wiki/Ruth_Teitelbaum" target="_blank" rel="noopener">Ruth Lichterman</a>, they laid the groundwork for future programmers and software engineers. And, since they were the first modern coders, they were instrumental in teaching others to program after the war.
       </p>
 
       <figure class="figure right border">
@@ -121,9 +121,9 @@
   </footer>
 <!-- MODALS -->
 <!--eniac-->
-  <div class="modal" id="eniac-modal">
+  <div class="modal" id="eniac-modal" role="dialog" aria-labelledby="eniac-title">
     <div class="modal-header flex-row">
-      <p class="color">Electronic Numerical Integrator and Computer</p>
+      <h3 id="eniac-title" class="color">Electronic Numerical Integrator and Computer</h3>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <figure class="figure right modal-figure">
@@ -136,9 +136,9 @@
   </div>
   
 <!--John Mauchly-->
-  <div class="modal" id="mauchly-modal">
+  <div class="modal" id="mauchly-modal" role="dialog" aria-labelledby="mauchly-title">
     <div class="modal-header flex-row">
-      <p class="color">John Mauchly <span class="modal-years">(1907-1980)</span></p>
+      <h3 id="mauchly-title" class="color">John Mauchly <span class="modal-years">(1907-1980)</span></h3>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <figure class="figure right modal-figure">
@@ -150,9 +150,9 @@
   </div>
 
 <!--J. Presper Eckert-->
-  <div class="modal" id="eckert-modal">
+  <div class="modal" id="eckert-modal" role="dialog" aria-labelledby="eckert-title">
     <div class="modal-header flex-row">
-      <p class="color">J. Presper Eckert <span class="modal-years">(1907-1980)</span></p>
+      <h3 id="eckert-title" class="color">J. Presper Eckert <span class="modal-years">(1907-1980)</span></h3>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <figure class="figure right modal-figure">
@@ -164,9 +164,9 @@
   </div>
 
 <!--Jean Jennings Bartik-->
-  <div class="modal" id="bartik-modal">
+  <div class="modal" id="bartik-modal" role="dialog" aria-labelledby="bartik-title">
     <div class="modal-header flex-row">
-      <p class="color">Jean Jennings Bartik <span class="modal-years">(1924-2011)</span></p>
+      <h3 id="bartik-title" class="color">Jean Jennings Bartik <span class="modal-years">(1924-2011)</span></h3>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <figure class="figure right modal-figure">
@@ -176,7 +176,7 @@
       American mathematician and programmer. Bartik began her work at the University of Pennsylvania, first manually calculating ballistics trajectories and then using ENIAC to do so. Bartik and her colleagues developed and codified many of the fundamentals of programming while working on the ENIAC, since it was the first computer of its kind. After her work on ENIAC, Bartik went on to work on BINAC and UNIVAC, and spent time at a variety of technical companies as a writer, manager, engineer and programmer. Content-management framework Drupal's default theme, Bartik, is named in her honor.
     </p>
   </div>
-
-  <div id="overlay"></div>
+<!--overlay-->
+  <div id="overlay" tabindex="-1"></div>
 </body>
 </html>

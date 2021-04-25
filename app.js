@@ -3,8 +3,9 @@
 // Declare variables for overlay and all open and close buttons returning an iterable Nodelist 
 // Using the data attribute as selector inside querySelectorAll 
 const overlay = document.getElementById('overlay')
-const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const openModalButtons = document.querySelectorAll('[aria-controls]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const modals = document.querySelectorAll('.modal');
 
 // Add event listener for each button
 // 'click' events create a variable targeting the specific modal based on data target attribute
@@ -12,10 +13,22 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]');
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
-    const specificModal = document.querySelector(button.dataset.modalTarget);
+    const specificModal = document.querySelector(button.getAttribute('aria-controls'));
     openModal(specificModal);
-    });
 });
+});
+
+/* code not working 
+const closeButton = document.querySelector('.close-button');
+
+modals.forEach(modal => {
+    window.addEventListener('keydown', (event) => {
+        if (event.key === "Tab") {
+        console.log(event);
+        closeButton.focus();
+        }
+    });
+});*/
 
 // Add event listener to overlay to close the active modal when overlay is clicked 
 // Do I need the forEach since no two modals will be open at once? 
