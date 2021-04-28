@@ -409,6 +409,15 @@ input:focus {
     opacity: 1;
 }
 
+#lichterman-modal figure {
+    width: 15rem;
+}
+
+#kleiman-modal p {
+    margin-bottom: 0.7rem;
+}
+
+
 @media only screen and (max-width: 770px) {
     .mobile-centre {
         align-items: center;
